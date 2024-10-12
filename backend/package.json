@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --legacy-watch src/index.ts",
+    "prod": "cross-env NODE_ENV=production nodemon src/index.ts",
+    "build": "pnpm exec tsc",
+    "migrate:latest": "pnpm knex migrate:latest --knexfile ./src/database/knexfile.ts",
+    "migrate:rollback": "pnpm knex migrate:rollback --knexfile ./src/database/knexfile.ts",
+    "seed:run": "pnpm knex seed:run --knexfile ./src/database/knexfile.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "knex": "^3.1.0",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/knex": "^0.16.1",
+    "@types/node": "^22.7.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
