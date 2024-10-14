@@ -62,7 +62,3 @@ docker-compose down
 
 - You can modify environment variables as needed in the `docker-compose.yaml`.
 - Ensure the database is properly seeded with the `pnpm` commands mentioned above.
-
----
-
-This should help users set up and run the project smoothly. Let me know if you'd like any further changes!
