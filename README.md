@@ -1,5 +1,7 @@
 # Library Management System
 
+### *Note: the project is incomplete*
+
 This project is a library management system containerized with Docker, including a Node.js backend, PostgreSQL database, and pgAdmin.
 
 ## Prerequisites
