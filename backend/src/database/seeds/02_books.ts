@@ -1,21 +1,11 @@
 import {Knex} from "knex";
+import {TBook} from "../../model/book-model";
 
-
-export  type TBooks = {
-    id: number,
-    isbn: string,
-    title: string,
-    author_id: number,
-    publisher: string,
-    edition: string,
-    year_of_publication: number,
-    copies_available: number
-}
 
 export async function seed(knex: Knex): Promise<void> {
     await knex("books").del();
 
-    const books: Partial<TBooks>[] = [
+    const books: Partial<TBook>[] = [
         {
             isbn: "9780132350884",
             title: "Clean Code",
@@ -45,5 +35,5 @@ export async function seed(knex: Knex): Promise<void> {
         },
     ]
 
-    await knex<TBooks>("books").insert(books);
+    await knex<TBook>("books").insert(books);
 };

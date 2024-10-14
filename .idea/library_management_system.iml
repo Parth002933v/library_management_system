@@ -5,6 +5,10 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/postgres_data" />
+      <excludeFolder url="file://$MODULE_DIR$/pgadmin" />
+      <excludeFolder url="file://$MODULE_DIR$/pgadmin/azurecredentialcache" />
+      <excludeFolder url="file://$MODULE_DIR$/pgadmin/storage" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

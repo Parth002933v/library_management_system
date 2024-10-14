@@ -6,7 +6,7 @@ export async function up(knex: Knex): Promise<void> {
 
     await knex.schema.createTable("books", (table) => {
         table.increments("id").primary();
-        table.string("isbn", 15).notNullable();
+        table.string("isbn", 15).notNullable().unique();
         table.string("title").notNullable();
         table.integer("author_id").unsigned().references("id").inTable("authors")
         table.string("publisher")

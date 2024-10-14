@@ -1,11 +1,6 @@
 import {Knex} from "knex";
+import {TAuthor} from "../../model/author-model";
 
-
-export type TAuthor = {
-    id: number
-    name: string
-    bio: string
-}
 
 export async function seed(knex: Knex): Promise<void> {
     await knex("authors").del();
