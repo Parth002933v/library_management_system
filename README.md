@@ -1,7 +1,3 @@
-Here’s the updated `README.md` with instructions for running migrations and seeds:
-
----
-
 # Library Management System
 
 This project is a library management system containerized with Docker, including a Node.js backend, PostgreSQL database, and pgAdmin.
