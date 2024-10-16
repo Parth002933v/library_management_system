@@ -31,7 +31,7 @@ const zodErrorHandler = ({res, error}: { res: Response, error: CustomError & Zod
             statusCode: error.statusCode,
             message: "Validation failed",
             error: error.issues.map(err => ({
-                field: err.path.join('.'), // Join path for easier readability
+                field: err.path.join('.'),
                 code: err.code,
                 message: err.message,
                 // @ts-ignore
